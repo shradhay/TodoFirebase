@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { InputLabel,TextField,Button, ListItem,List } from '@material-ui/core';
+import { InputLabel,TextField,Button } from '@material-ui/core';
 import "./App.css"
 import img from "./todo_img.png"
 import Todos from "./Todos"
@@ -10,13 +10,22 @@ const App=()=>{
          setInput(e.target.value)
       }
     const addtodo=(e)=>{
-
-e.preventDefault();
-        setTodos([...todos,input]);
+        e.preventDefault();
+        setTodos((olddata)=>{
+          return [...olddata,input]
+        });
         setInput("")
-}
- 
-  return(
+       }
+      const deleteitems =(id)=>
+      {
+        setTodos((olddata)=>{
+          return olddata.filter((arr,index)=>{
+            return index !== id;
+          })
+        })
+        
+      }
+     return(
    <>
         <div className="maindiv">
         <div className="innerdiv">
@@ -26,13 +35,20 @@ e.preventDefault();
         <TextField onChange={addinp} value={input}/>
         <Button onClick={addtodo} type="submit" variant="contained" color="secondary">Add Todo</Button>
         </form>
-        <ol>
-          {todos.map((todo)=>{
+        
+          {todos.map((arr,index)=>{
              return(
-               <Todos to={todo}/>
+               <Todos
+                name={arr}
+                id={index}
+                key={index}
+                onSelect={deleteitems}
+                />
              )
-           })}
-           </ol>
+           })} 
+         
+    
+           
         
           </div>
      </div>

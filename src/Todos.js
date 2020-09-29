@@ -4,6 +4,9 @@ import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import "./App.css"
 
 const Todos =(props)=>{
+    
+
+
     return(
         <>
         <div className="todolist">
@@ -11,8 +14,13 @@ const Todos =(props)=>{
                 <List>
             <ListItem>
                 
-                <ListItemText primary="Todo" secondary={props.to}> </ListItemText>
-                <DeleteForeverIcon/>
+                <ListItemText primary="Todo" secondary={props.name}> </ListItemText>
+                <DeleteForeverIcon onClick ={()=>{
+                    return(
+                        props.onSelect(props.id)
+                    )
+                   
+                }}/>
                     </ListItem>
                     
                     </List>

@@ -16,7 +16,9 @@ body
   display: flex;
   justify-content: space-around;
   background-color: #EA7773;
-  margin: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top:30px;
   border-radius: 30px;
 }
  .maindiv h1
@@ -28,8 +30,7 @@ body
 .todolist
 {
  
-  
-  
+ 
   font-size: 80px;
   font-weight: 700;
   
