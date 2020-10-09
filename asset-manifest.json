@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Todofirebase/static/css/main.3846ed52.chunk.css",
+    "main.js": "/Todofirebase/static/js/main.17fe181d.chunk.js",
+    "main.js.map": "/Todofirebase/static/js/main.17fe181d.chunk.js.map",
+    "runtime-main.js": "/Todofirebase/static/js/runtime-main.72e9396d.js",
+    "runtime-main.js.map": "/Todofirebase/static/js/runtime-main.72e9396d.js.map",
+    "static/js/2.32572543.chunk.js": "/Todofirebase/static/js/2.32572543.chunk.js",
+    "static/js/2.32572543.chunk.js.map": "/Todofirebase/static/js/2.32572543.chunk.js.map",
+    "index.html": "/Todofirebase/index.html",
+    "precache-manifest.6a673ee5628ce24fcb6f1406a8a2f7b1.js": "/Todofirebase/precache-manifest.6a673ee5628ce24fcb6f1406a8a2f7b1.js",
+    "service-worker.js": "/Todofirebase/service-worker.js",
+    "static/css/main.3846ed52.chunk.css.map": "/Todofirebase/static/css/main.3846ed52.chunk.css.map",
+    "static/js/2.32572543.chunk.js.LICENSE.txt": "/Todofirebase/static/js/2.32572543.chunk.js.LICENSE.txt",
+    "static/media/todo_img.png": "/Todofirebase/static/media/todo_img.8cf708d2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72e9396d.js",
+    "static/js/2.32572543.chunk.js",
+    "static/css/main.3846ed52.chunk.css",
+    "static/js/main.17fe181d.chunk.js"
+  ]
+}
